@@ -4,9 +4,9 @@ import logo from './friedhead.svg';
 import './App.css';
 import Demo from './components/Demo';
 const inputstyle = {
-	textAlign: 'center',
+  textAlign: 'center',
   fontSize: '20px',
-	margin: '50px',
+  margin: '50px',
   width: '40vw',
 };
 
@@ -15,7 +15,7 @@ const divstyle = {
 };
 
 export default function App() {
-  const [word,setWord] = React.useState('');
+  const [word, setWord] = React.useState('');
   function updateShoutHandler(e) {
     setWord(e.target.value);
   }
@@ -27,10 +27,10 @@ export default function App() {
         <Hello />
         <h2>Day Two / Shout @ Me</h2>
         <div style={divstyle}>
-          <input style={inputstyle} onKeyUp={updateShoutHandler} type="text" placeholder="Do not shout @ me"/>
+          <input style={inputstyle} onKeyUp={updateShoutHandler} type="text" placeholder="Do not shout @ me" />
         </div>
       </header>
-      <Demo shout={word.toUpperCase()}/>
+      <Demo shout={word.toUpperCase()} />
     </div>
   );
 }

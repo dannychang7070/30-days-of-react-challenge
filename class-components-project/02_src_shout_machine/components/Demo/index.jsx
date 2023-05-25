@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './index.css';
 
 const outputstyle = {
-	textAlign: 'center',
+  textAlign: 'center',
   color: 'pink',
   fontSize: '100px',
   marginTop: '-30px',
@@ -15,7 +15,7 @@ const divstyle = {
 
 export default class Demo extends Component {
   render() {
-    const {shout} = this.props;
+    const { shout } = this.props;
     return (
       <div style={divstyle}>
         <h1 style={outputstyle}>{shout}</h1>

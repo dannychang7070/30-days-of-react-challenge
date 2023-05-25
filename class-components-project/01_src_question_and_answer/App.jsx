@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import logo from './friedhead.svg';
 import './App.css';
 import Hello from './components/Hello/';
@@ -11,10 +11,10 @@ export default class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1>30 days of React</h1>
-          <Hello/>
+          <Hello />
           <h2>Day One / Question & Answer</h2>
         </header>
-        <Question/>
+        <Question />
       </div>
     )
   }
