@@ -11,7 +11,7 @@ export default class App extends Component {
 
   addThoughtHandler = (event) => {
     event.preventDefault();
-    if (this.myRef.current.value === '') {
+    if (this.myRef.current.value.trim() === '') {
       alert("Can't allow empty thought!");
       return;
     }
