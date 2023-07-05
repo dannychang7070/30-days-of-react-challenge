@@ -15,7 +15,7 @@ export default class App extends Component {
 
   getWeather = async (event) => {
     event.preventDefault();
-    const Api_Key = 'ab350485fa82f8dccf4260580ee30327'
+    const Api_Key = 'YOUR API KEY';
 
     //We collect the city and country input bu the user, and use them in the fetch
     const city = event.target.elements.city.value;
